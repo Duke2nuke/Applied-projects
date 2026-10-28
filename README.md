@@ -19,3 +19,8 @@ in an interview — not just listed.
 - Day 01 — Prompt Injection Detector (ML, Python): TF-IDF + Logistic
   Regression classifier for benign vs injection prompts.
   See `day-01-prompt-injection-detector/`.
+- Day 02 — Server Metrics Anomaly Detector (ML, Python):
+  unsupervised, same-hour seasonal baseline + median/MAD modified
+  z-score detector for CPU, memory, latency, and request-rate
+  anomalies in synthetic server metrics.
+  See `day-02-server-anomaly-detector/`.
