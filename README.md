@@ -24,3 +24,8 @@ in an interview — not just listed.
   z-score detector for CPU, memory, latency, and request-rate
   anomalies in synthetic server metrics.
   See `day-02-server-anomaly-detector/`.
+- Day 03 — Resume–Job Description Matcher (ML, Python): TF-IDF
+  cosine-similarity ranking of job postings against a resume, with
+  a matched-vs-missing skill-gap report per posting. Stdlib only,
+  synthetic demo data.
+  See `day-03-resume-jd-matcher/`.
