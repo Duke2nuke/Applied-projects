@@ -29,3 +29,8 @@ in an interview — not just listed.
   a matched-vs-missing skill-gap report per posting. Stdlib only,
   synthetic demo data.
   See `day-03-resume-jd-matcher/`.
+- Day 04 — Mini MCP Notes Server (Day A: trending-skill, Python):
+  stdlib-only Model Context Protocol server over stdio JSON-RPC,
+  exposing add_note / list_notes / search_notes tools with JSON
+  persistence and an automated subprocess test harness.
+  See `day-04-mcp-notes-server/`.
