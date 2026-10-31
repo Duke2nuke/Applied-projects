@@ -34,3 +34,9 @@ in an interview — not just listed.
   exposing add_note / list_notes / search_notes tools with JSON
   persistence and an automated subprocess test harness.
   See `day-04-mcp-notes-server/`.
+- Day 05 — Customer Segmentation with K-Means, from Scratch
+  (Day B: AI/ML Python): stdlib-only K-means++ clustering of
+  synthetic customers (age, income, spending score), with elbow
+  table, silhouette score, and cluster profiles. Silhouette 0.475
+  at k=4; clusters recover the planted segments.
+  See `day-05-customer-segmentation/`.
