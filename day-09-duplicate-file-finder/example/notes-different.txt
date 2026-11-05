@@ -1,0 +1,1 @@
+Quarterly notes: ship the demo, measure, then iterate!

@@ -1,0 +1,8 @@
+{"task_id": "t1", "harness": "harness-a", "model": "demo-model", "input_tokens": 12000, "cached_input_tokens": 9600, "output_tokens": 1500, "solved": true, "steps": 10, "tool_calls": 4, "duration_s": 40}
+{"task_id": "t2", "harness": "harness-a", "model": "demo-model", "input_tokens": 10000, "cached_input_tokens": 8000, "output_tokens": 1200, "solved": true, "steps": 8, "tool_calls": 3, "duration_s": 32}
+{"task_id": "t3", "harness": "harness-a", "model": "demo-model", "input_tokens": 14000, "cached_input_tokens": 11200, "output_tokens": 1800, "solved": false, "steps": 15, "tool_calls": 7, "duration_s": 58}
+{"task_id": "t4", "harness": "harness-a", "model": "demo-model", "input_tokens": 11000, "cached_input_tokens": 8800, "output_tokens": 1400, "solved": true, "steps": 9, "tool_calls": 4, "duration_s": 35}
+{"task_id": "t1", "harness": "harness-b", "model": "demo-model", "input_tokens": 15000, "cached_input_tokens": 3000, "output_tokens": 4000, "solved": true, "steps": 18, "tool_calls": 9, "duration_s": 90}
+{"task_id": "t2", "harness": "harness-b", "model": "demo-model", "input_tokens": 16000, "cached_input_tokens": 3200, "output_tokens": 4500, "solved": false, "steps": 22, "tool_calls": 11, "duration_s": 110}
+{"task_id": "t3", "harness": "harness-b", "model": "demo-model", "input_tokens": 14000, "cached_input_tokens": 2800, "output_tokens": 3800, "solved": false, "steps": 20, "tool_calls": 10, "duration_s": 100}
+{"task_id": "t4", "harness": "harness-b", "model": "demo-model", "input_tokens": 17000, "cached_input_tokens": 3400, "output_tokens": 4200, "solved": true, "steps": 19, "tool_calls": 8, "duration_s": 95}
