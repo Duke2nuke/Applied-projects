@@ -72,3 +72,9 @@ in an interview — not just listed.
   anything (report-only by design), with JSON output, excludes, and
   a minimum-size filter. MIT-licensed, with example docs and 6
   passing tests. See `day-09-duplicate-file-finder/`.
+- Day 11 — Daily Demand Forecaster (Day B: AI/ML Python):
+  stdlib-only time-series forecasting on 365 synthetic days of
+  canteen orders — ridge regression on lags 1/7/14, trend and
+  day-of-week, vs naive and seasonal-naive baselines, evaluated
+  walk-forward. MAE 7.60 vs seasonal-naive 9.07; 7/7 tests pass.
+  See `day-11-daily-demand-forecaster/`.
