@@ -78,3 +78,10 @@ in an interview — not just listed.
   day-of-week, vs naive and seasonal-naive baselines, evaluated
   walk-forward. MAE 7.60 vs seasonal-naive 9.07; 7/7 tests pass.
   See `day-11-daily-demand-forecaster/`.
+- Day 12 — TODO Sweeper (Day C: community / open-source):
+  stdlib-only CLI that sweeps a directory tree for TODO, FIXME,
+  HACK, XXX, NOTE and BUG marker comments, comment-aware so
+  "TODOLIST", prose "bug" and string literals are not flagged,
+  grouped by tag with file:line, JSON output and a Markdown
+  report, linter-style exit codes. MIT-licensed, with example
+  docs and 7 passing tests. See `day-12-todo-sweeper/`.
