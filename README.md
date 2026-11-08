@@ -85,3 +85,12 @@ in an interview — not just listed.
   grouped by tag with file:line, JSON output and a Markdown
   report, linter-style exit codes. MIT-licensed, with example
   docs and 7 passing tests. See `day-12-todo-sweeper/`.
+- Day 13 — Context Budget Packer (Day A: trending-skill):
+  stdlib-only context-engineering tool that fits system
+  instructions, examples, retrieved docs, tool results and chat
+  history into a token budget under compact/truncate/drop
+  policies, with history compaction and a per-item budget report.
+  Demo (716 tokens requested): 600-token budget keeps all 8
+  items, history compacted 163 -> 37 tokens; 400-token budget
+  keeps 5, trims 1, drops 3. 11 passing tests.
+  See `day-13-context-budget-packer/`.
