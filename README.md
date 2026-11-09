@@ -94,3 +94,11 @@ in an interview — not just listed.
   items, history compacted 163 -> 37 tokens; 400-token budget
   keeps 5, trims 1, drops 3. 11 passing tests.
   See `day-13-context-budget-packer/`.
+- Day 14 — Movie Recommender (Day B: AI/ML Python):
+  stdlib-only item-based collaborative filtering on 1,163 synthetic
+  ratings (60 users, 40 movies) — adjusted cosine similarity on
+  mean-centred ratings, shrunk by co-rater count, top-10 neighbour
+  prediction, popularity fallback for cold-start users. Held-out
+  RMSE 0.648 vs global-mean 0.710 and user-mean 0.738; Precision@5
+  0.153, Recall@5 0.506. 7 passing tests.
+  See `day-14-movie-recommender/`.
