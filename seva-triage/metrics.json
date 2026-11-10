@@ -1,0 +1,15 @@
+{
+  "n_total": 66,
+  "n_train": 49,
+  "n_test": 17,
+  "accuracy": 0.8235,
+  "macro_f1": 0.825,
+  "department_counts": {
+    "Education": 11,
+    "Electricity": 11,
+    "Health": 11,
+    "Revenue & Certificates": 11,
+    "Roads & Transport": 11,
+    "Water Supply": 11
+  }
+}
