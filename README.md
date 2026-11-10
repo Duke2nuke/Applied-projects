@@ -125,3 +125,16 @@ with a measured result, and each README states its limits honestly.
   by a Flask REST API; accuracy 1.0, macro F1 1.0 on 15 held-out
   hand-written messages (small synthetic set — pipeline proof, not a
   real-world spam score). See `proof-nlp-flask-api/`.
+- Backend API — Flask + SQLite tasks API with token auth, CRUD, and input
+  validation; 29/29 endpoint tests passing. See `proof-backend-api/`.
+- Frontend App — TypeScript habit tracker (streaks, weekly progress,
+  localStorage), compiled in strict mode; 29/29 logic tests passing.
+  See `proof-frontend-app/`.
+- Full Stack App — Flask API + vanilla JS frontend together, one server,
+  SQLite persistence, token auth; 14/14 end-to-end tests passing.
+  See `proof-fullstack-app/`.
+- Ethical Hacking Lab — local-only lab (localhost, own code only): a
+  deliberately vulnerable Flask app (SQL injection, reflected XSS,
+  plaintext passwords) plus a scanner that finds 3 flaws before patching
+  and 0 after, and a patched version; 4/4 lab tests passing.
+  See `proof-ethical-hacking-lab/`.

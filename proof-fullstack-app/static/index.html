@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tasks — Full Stack Demo</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main>
+    <h1>Tasks</h1>
+    <p class="hint">Small local demo app. Log in with the demo account
+      (<code>demo</code> / <code>demo123</code>) — demo auth only, not production-ready.</p>
+
+    <p id="error" class="error" hidden></p>
+
+    <section id="login-section">
+      <h2>Log in</h2>
+      <form id="login-form">
+        <label>Username <input id="username" type="text" value="demo" required></label>
+        <label>Password <input id="password" type="password" value="demo123" required></label>
+        <button type="submit">Log in</button>
+      </form>
+    </section>
+
+    <section id="app-section" hidden>
+      <p>Logged in as <span id="who"></span>
+        <button id="logout" type="button">Log out</button></p>
+
+      <form id="add-form">
+        <label>New task <input id="new-title" type="text" maxlength="200" placeholder="Task title" required></label>
+        <label>Notes <input id="new-notes" type="text" maxlength="2000" placeholder="Optional notes"></label>
+        <button type="submit">Add task</button>
+      </form>
+
+      <ul id="task-list"></ul>
+      <p id="empty" class="hint">No tasks yet — add one above.</p>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"description":"Small habit/workout tracker demo — vanilla TypeScript + HTML/CSS, localStorage only, no backend.","name":"proof-frontend-app","private":true,"scripts":{"build":"npx -y typescript -p tsconfig.json","test":"node test_frontend.js"},"type":"module","version":"1.0.0"}
