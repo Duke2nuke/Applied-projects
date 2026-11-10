@@ -1,2 +1,0 @@
-# LOCAL EDUCATIONAL LAB — own code only, never run against real systems
-flask
