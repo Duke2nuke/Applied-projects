@@ -1,0 +1,8 @@
+2026-11-10 08:00:01 INFO server started on port 8000
+2026-11-10 08:00:02 INFO worker pool ready (4 workers)
+2026-11-10 08:00:03 WARN slow query on /api/reports took 1.28s
+2026-11-10 08:00:04 ERROR database connection lost, retrying (attempt 1/3)
+2026-11-10 08:00:05 INFO database connection restored
+2026-11-10 08:00:06 ERROR unhandled exception in /api/reports: division by zero
+2026-11-10 08:00:07 DEBUG cache miss for key user:42
+2026-11-10 08:00:08 INFO request served in 0.03s

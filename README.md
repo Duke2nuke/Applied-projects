@@ -102,3 +102,11 @@ in an interview — not just listed.
   RMSE 0.648 vs global-mean 0.710 and user-mean 0.738; Precision@5
   0.153, Recall@5 0.506. 7 passing tests.
   See `day-14-movie-recommender/`.
+- Day 15 — LogLens (Day C: community / open-source): stdlib-only CLI
+  that summarises web access logs and plain-text app logs — status
+  breakdown and error rate, top paths/IPs, paths with most errors,
+  slowest requests, and the actual error lines, with JSON output.
+  On the 12-line synthetic access log: 58.3% error rate, worst path
+  `/old-page` (3× 404), slowest request 1.284 s returning a 500.
+  MIT-licensed, with example logs and 11 passing tests.
+  See `day-15-log-analyzer/`.
