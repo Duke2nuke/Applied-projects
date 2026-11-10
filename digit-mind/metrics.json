@@ -1,0 +1,7 @@
+{
+  "dataset": "sklearn Digits (1797 8x8 images, 10 classes)",
+  "train_size": 1437,
+  "test_size": 360,
+  "epochs": 30,
+  "test_accuracy": 0.9722
+}

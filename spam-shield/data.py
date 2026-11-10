@@ -1,0 +1,73 @@
+"""Small hand-written labelled message dataset (synthetic, for demo only).
+
+30 ham + 30 spam-style messages. Labels were written by hand for this
+proof project; the text is generic template phrasing, not real user data.
+"""
+
+HAM = [
+    "Can we meet tomorrow at 3pm to discuss the project?",
+    "Please send me the slides from yesterday's lecture.",
+    "The assignment deadline is Friday, don't forget to submit.",
+    "I finished the report, let me know if you want changes.",
+    "Are you free this weekend for a study session?",
+    "The lab is open from 9am to 5pm on weekdays.",
+    "Could you share the notes from the last class?",
+    "I will bring the laptop charger to the library.",
+    "The group meeting moved to room 204.",
+    "Thanks for helping me with the maths homework.",
+    "Let us review the code together before the demo.",
+    "The bus arrives at the campus gate at 8am.",
+    "I uploaded the files to the shared folder.",
+    "Can you check my essay draft when you have time?",
+    "The professor posted the exam schedule online.",
+    "We need three more volunteers for the workshop.",
+    "I bought the textbook from the campus store.",
+    "The wifi password for the lab is on the notice board.",
+    "Please remind me to book the lab slot tomorrow.",
+    "The cricket match starts at 4pm on the main ground.",
+    "I am running late, start the meeting without me.",
+    "The library closes early on Sundays.",
+    "Did you see the notice about the hackathon?",
+    "I need a printout of the timetable, please.",
+    "The canteen menu for today is on the board.",
+    "Let me know your feedback on the presentation.",
+    "We should practise the demo once more tonight.",
+    "The train ticket is booked for Saturday morning.",
+    "I left my notebook in the classroom, can you check?",
+    "The seminar on AI is happening in the auditorium.",
+]
+
+SPAM = [
+    "Congratulations! You have won a free prize, click here to claim now.",
+    "You are selected for a cash reward, send your bank details today.",
+    "Limited offer! Buy now and get 90 percent off, hurry!",
+    "Your account will be blocked, verify your password immediately.",
+    "Win a free smartphone, just click this link and register.",
+    "You have won the lottery, claim your jackpot now.",
+    "Earn money fast from home, no investment needed, join now.",
+    "Your parcel is stuck, pay the delivery fee to release it.",
+    "Act now! Exclusive deal ends tonight, order immediately.",
+    "You are our lucky winner, send your details to collect the prize.",
+    "Free gift card waiting for you, click to redeem instantly.",
+    "Your bank account is suspended, update your details here.",
+    "Get rich quick with this secret method, sign up free.",
+    "Claim your free voucher before it expires today.",
+    "Urgent! Your OTP is required to unlock your account.",
+    "You won a holiday trip, confirm your booking with payment.",
+    "Double your money in one week, invest now, guaranteed returns.",
+    "Your subscription is expiring, renew now to avoid charges.",
+    "Congratulations, you have been chosen for a free laptop.",
+    "Click here to get a loan approved instantly, no documents needed.",
+    "Your mobile number won a prize, call now to collect.",
+    "Special discount only for you, shop now and save big.",
+    "Your profile has been selected for a job, pay the fee to apply.",
+    "Free recharge offer, recharge now and get double balance.",
+    "You have an unclaimed refund, enter your card details.",
+    "Win big in our lucky draw, buy a ticket now.",
+    "Your email account will be deleted, verify now to keep it.",
+    "Get a free trial of premium membership, no card required.",
+    "You are eligible for a cashback of 5000, claim it today.",
+    "Last chance! Your prize expires in one hour, act fast.",
+]
+
+DATA = [(t, 0) for t in HAM] + [(t, 1) for t in SPAM]  # 0 = ham, 1 = spam

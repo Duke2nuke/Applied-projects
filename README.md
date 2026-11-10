@@ -111,30 +111,30 @@ in an interview — not just listed.
   MIT-licensed, with example logs and 11 passing tests.
   See `day-15-log-analyzer/`.
 
-## Proof projects (10 Nov 2026)
+## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally
 with a measured result, and each README states its limits honestly.
 
 - PyTorch Classifier — PyTorch MLP on the sklearn Digits dataset, test
-  accuracy 0.9722 (360 held-out images). See `proof-pytorch-classifier/`.
+  accuracy 0.9722 (360 held-out images). See `digit-mind/.
 - Data Science + SQL Pipeline — SQLite joins/aggregations, Pandas EDA,
   Ridge regression on 300 synthetic retail orders: RMSE 27.90, R² 0.8973.
-  See `proof-data-science-sql-pipeline/`.
+  See `retail-pulse/.
 - NLP + Flask API — TF-IDF + Logistic Regression spam classifier served
   by a Flask REST API; accuracy 1.0, macro F1 1.0 on 15 held-out
   hand-written messages (small synthetic set — pipeline proof, not a
-  real-world spam score). See `proof-nlp-flask-api/`.
+  real-world spam score). See `spam-shield/.
 - Backend API — Flask + SQLite tasks API with token auth, CRUD, and input
-  validation; 29/29 endpoint tests passing. See `proof-backend-api/`.
+  validation; 29/29 endpoint tests passing. See `taskflow-api/.
 - Frontend App — TypeScript habit tracker (streaks, weekly progress,
   localStorage), compiled in strict mode; 29/29 logic tests passing.
-  See `proof-frontend-app/`.
+  See `streakly/.
 - Full Stack App — Flask API + vanilla JS frontend together, one server,
   SQLite persistence, token auth; 14/14 end-to-end tests passing.
-  See `proof-fullstack-app/`.
+  See `flowboard/.
 - Ethical Hacking Lab — local-only lab (localhost, own code only): a
   deliberately vulnerable Flask app (SQL injection, reflected XSS,
   plaintext passwords) plus a scanner that finds 3 flaws before patching
   and 0 after, and a patched version; 4/4 lab tests passing.
-  See `proof-ethical-hacking-lab/`.
+  See `vuln-lab/.
