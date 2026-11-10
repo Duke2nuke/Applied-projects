@@ -1,0 +1,12 @@
+{
+  "dataset": "60 hand-written messages (30 ham, 30 spam), synthetic",
+  "train_size": 45,
+  "test_size": 15,
+  "accuracy": 1.0,
+  "ham_precision": 1.0,
+  "ham_recall": 1.0,
+  "spam_precision": 1.0,
+  "spam_recall": 1.0,
+  "spam_f1": 1.0,
+  "macro_f1": 1.0
+}

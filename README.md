@@ -110,3 +110,18 @@ in an interview — not just listed.
   `/old-page` (3× 404), slowest request 1.284 s returning a 500.
   MIT-licensed, with example logs and 11 passing tests.
   See `day-15-log-analyzer/`.
+
+## Proof projects (10 Nov 2026)
+
+Built as checkable proof for internship skills — each one was run locally
+with a measured result, and each README states its limits honestly.
+
+- PyTorch Classifier — PyTorch MLP on the sklearn Digits dataset, test
+  accuracy 0.9722 (360 held-out images). See `proof-pytorch-classifier/`.
+- Data Science + SQL Pipeline — SQLite joins/aggregations, Pandas EDA,
+  Ridge regression on 300 synthetic retail orders: RMSE 27.90, R² 0.8973.
+  See `proof-data-science-sql-pipeline/`.
+- NLP + Flask API — TF-IDF + Logistic Regression spam classifier served
+  by a Flask REST API; accuracy 1.0, macro F1 1.0 on 15 held-out
+  hand-written messages (small synthetic set — pipeline proof, not a
+  real-world spam score). See `proof-nlp-flask-api/`.
