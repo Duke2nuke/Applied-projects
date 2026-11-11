@@ -1,0 +1,203 @@
+{
+  "cases": 10,
+  "answerable": 8,
+  "out_of_scope": 2,
+  "recall@1": 1.0,
+  "recall@3": 1.0,
+  "answer_accuracy": 1.0,
+  "refusal_accuracy": 1.0,
+  "per_case": [
+    {
+      "question": "When does ForgeLab open on weekdays?",
+      "decision": "answered",
+      "top_score": 0.4305,
+      "retrieved": [
+        "hours",
+        "3d-printing",
+        "soldering"
+      ],
+      "nodes": [
+        "retrieve",
+        "approval_gate:auto-approved",
+        "answer"
+      ],
+      "expected_doc": "hours",
+      "recall@1": true,
+      "recall@3": true,
+      "keyword_in_answer": true,
+      "correct": true
+    },
+    {
+      "question": "Which 3D printers does ForgeLab have?",
+      "decision": "answered",
+      "top_score": 0.4208,
+      "retrieved": [
+        "3d-printing",
+        "hours",
+        "workshops"
+      ],
+      "nodes": [
+        "retrieve",
+        "approval_gate:auto-approved",
+        "answer"
+      ],
+      "expected_doc": "3d-printing",
+      "recall@1": true,
+      "recall@3": true,
+      "keyword_in_answer": true,
+      "correct": true
+    },
+    {
+      "question": "What materials are banned on the laser cutter?",
+      "decision": "answered",
+      "top_score": 0.4383,
+      "retrieved": [
+        "laser-cutter",
+        "workshops",
+        "hours"
+      ],
+      "nodes": [
+        "retrieve",
+        "approval_gate:auto-approved",
+        "answer"
+      ],
+      "expected_doc": "laser-cutter",
+      "recall@1": true,
+      "recall@3": true,
+      "keyword_in_answer": true,
+      "correct": true
+    },
+    {
+      "question": "What safety gear is required in the workshop zone?",
+      "decision": "answered",
+      "top_score": 0.334,
+      "retrieved": [
+        "safety",
+        "workshops",
+        "hours"
+      ],
+      "nodes": [
+        "retrieve",
+        "approval_gate:auto-approved",
+        "answer"
+      ],
+      "expected_doc": "safety",
+      "recall@1": true,
+      "recall@3": true,
+      "keyword_in_answer": true,
+      "correct": true
+    },
+    {
+      "question": "How much does membership cost for SRM students?",
+      "decision": "answered",
+      "top_score": 0.4053,
+      "retrieved": [
+        "membership",
+        "lockers",
+        "hours"
+      ],
+      "nodes": [
+        "retrieve",
+        "approval_gate:auto-approved",
+        "answer"
+      ],
+      "expected_doc": "membership",
+      "recall@1": true,
+      "recall@3": true,
+      "keyword_in_answer": true,
+      "correct": true
+    },
+    {
+      "question": "What kind of solder is provided at the soldering stations?",
+      "decision": "answered",
+      "top_score": 0.5459,
+      "retrieved": [
+        "soldering",
+        "membership",
+        "workshops"
+      ],
+      "nodes": [
+        "retrieve",
+        "approval_gate:auto-approved",
+        "answer"
+      ],
+      "expected_doc": "soldering",
+      "recall@1": true,
+      "recall@3": true,
+      "keyword_in_answer": true,
+      "correct": true
+    },
+    {
+      "question": "How far ahead must I cancel a booking?",
+      "decision": "answered",
+      "top_score": 0.4263,
+      "retrieved": [
+        "booking-rules",
+        "3d-printing",
+        "hours"
+      ],
+      "nodes": [
+        "retrieve",
+        "approval_gate:auto-approved",
+        "answer"
+      ],
+      "expected_doc": "booking-rules",
+      "recall@1": true,
+      "recall@3": true,
+      "keyword_in_answer": true,
+      "correct": true
+    },
+    {
+      "question": "When do I submit a CAD file for a Friday CNC job?",
+      "decision": "answered",
+      "top_score": 0.559,
+      "retrieved": [
+        "cnc-mill",
+        "hours",
+        "3d-printing"
+      ],
+      "nodes": [
+        "retrieve",
+        "approval_gate:auto-approved",
+        "answer"
+      ],
+      "expected_doc": "cnc-mill",
+      "recall@1": true,
+      "recall@3": true,
+      "keyword_in_answer": true,
+      "correct": true
+    },
+    {
+      "question": "What is the capital of France?",
+      "decision": "refused",
+      "top_score": 0.0,
+      "retrieved": [
+        "hours",
+        "3d-printing",
+        "laser-cutter"
+      ],
+      "nodes": [
+        "retrieve",
+        "refuse"
+      ],
+      "expected": "refused",
+      "correct": true
+    },
+    {
+      "question": "How do I reset my university email password?",
+      "decision": "refused",
+      "top_score": 0.0,
+      "retrieved": [
+        "hours",
+        "3d-printing",
+        "laser-cutter"
+      ],
+      "nodes": [
+        "retrieve",
+        "refuse"
+      ],
+      "expected": "refused",
+      "correct": true
+    }
+  ]
+}

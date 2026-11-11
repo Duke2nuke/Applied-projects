@@ -110,6 +110,14 @@ in an interview — not just listed.
   `/old-page` (3× 404), slowest request 1.284 s returning a 500.
   MIT-licensed, with example logs and 11 passing tests.
   See `day-15-log-analyzer/`.
+- Day 16 — LangGraph RAG Agent with a Human Approval Gate (Day A:
+  trending-skill): LangGraph StateGraph agent that answers from a
+  local TF-IDF retriever tool, pauses at a human approval gate
+  (LangGraph `interrupt()` + resume) before answering, refuses below
+  a retrieval threshold, and writes a JSONL trace per run. 10-case
+  golden-set eval: recall@1 = 1.0, recall@3 = 1.0, answer accuracy
+  1.0, refusal accuracy 1.0 (small synthetic corpus — pipeline proof).
+  7 passing tests. See `day-16-langgraph-rag-agent/`.
 
 ## Skill projects (10 Nov 2026)
 
