@@ -1,0 +1,114 @@
+{
+  "dataset": "sklearn.datasets.load_breast_cancer",
+  "n_samples": 569,
+  "n_features": 30,
+  "target_names": [
+    "malignant",
+    "benign"
+  ],
+  "train_size": 455,
+  "test_size": 114,
+  "random_state": 42,
+  "test_size_fraction": 0.2,
+  "cv_folds": 5,
+  "models": {
+    "logistic_regression": {
+      "cv_accuracy_mean": 0.9780219780219781,
+      "cv_accuracy_std": 0.009828870230768321,
+      "cv_f1_macro_mean": 0.9764259233960633,
+      "cv_f1_macro_std": 0.010609383235379802,
+      "test_accuracy": 0.9824561403508771,
+      "test_precision_macro": 0.9811507936507937,
+      "test_recall_macro": 0.9811507936507937,
+      "test_f1_macro": 0.9811507936507937,
+      "confusion_matrix": [
+        [
+          41,
+          1
+        ],
+        [
+          1,
+          71
+        ]
+      ],
+      "classification_report": {
+        "malignant": {
+          "precision": 0.9761904761904762,
+          "recall": 0.9761904761904762,
+          "f1-score": 0.9761904761904762,
+          "support": 42.0
+        },
+        "benign": {
+          "precision": 0.9861111111111112,
+          "recall": 0.9861111111111112,
+          "f1-score": 0.9861111111111112,
+          "support": 72.0
+        },
+        "accuracy": 0.9824561403508771,
+        "macro avg": {
+          "precision": 0.9811507936507937,
+          "recall": 0.9811507936507937,
+          "f1-score": 0.9811507936507937,
+          "support": 114.0
+        },
+        "weighted avg": {
+          "precision": 0.9824561403508771,
+          "recall": 0.9824561403508771,
+          "f1-score": 0.9824561403508771,
+          "support": 114.0
+        }
+      },
+      "classification_report_text": "              precision    recall  f1-score   support\n\n   malignant       0.98      0.98      0.98        42\n      benign       0.99      0.99      0.99        72\n\n    accuracy                           0.98       114\n   macro avg       0.98      0.98      0.98       114\nweighted avg       0.98      0.98      0.98       114\n",
+      "n_test": 114
+    },
+    "random_forest": {
+      "cv_accuracy_mean": 0.9626373626373628,
+      "cv_accuracy_std": 0.01785502946073838,
+      "cv_f1_macro_mean": 0.9601856883992236,
+      "cv_f1_macro_std": 0.01876208097994298,
+      "test_accuracy": 0.956140350877193,
+      "test_precision_macro": 0.9550618108920814,
+      "test_recall_macro": 0.9503968253968254,
+      "test_f1_macro": 0.9526381387619444,
+      "confusion_matrix": [
+        [
+          39,
+          3
+        ],
+        [
+          2,
+          70
+        ]
+      ],
+      "classification_report": {
+        "malignant": {
+          "precision": 0.9512195121951219,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.9397590361445783,
+          "support": 42.0
+        },
+        "benign": {
+          "precision": 0.958904109589041,
+          "recall": 0.9722222222222222,
+          "f1-score": 0.9655172413793104,
+          "support": 72.0
+        },
+        "accuracy": 0.956140350877193,
+        "macro avg": {
+          "precision": 0.9550618108920814,
+          "recall": 0.9503968253968254,
+          "f1-score": 0.9526381387619444,
+          "support": 114.0
+        },
+        "weighted avg": {
+          "precision": 0.9560729421281235,
+          "recall": 0.956140350877193,
+          "f1-score": 0.9560273762928302,
+          "support": 114.0
+        }
+      },
+      "classification_report_text": "              precision    recall  f1-score   support\n\n   malignant       0.95      0.93      0.94        42\n      benign       0.96      0.97      0.97        72\n\n    accuracy                           0.96       114\n   macro avg       0.96      0.95      0.95       114\nweighted avg       0.96      0.96      0.96       114\n",
+      "n_test": 114
+    }
+  }
+}
