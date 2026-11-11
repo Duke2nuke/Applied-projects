@@ -1,0 +1,28 @@
+{
+  "dataset": "sktime.datasets.load_airline (AirPassengers, monthly, 1949-1960)",
+  "n_observations": 144,
+  "train_size": 120,
+  "test_size": 24,
+  "test_period": [
+    "1959-01",
+    "1960-12"
+  ],
+  "models": {
+    "seasonal_naive": {
+      "mae": 71.25,
+      "rmse": 76.99,
+      "mae_vs_seasonal_naive_pct": 0.0
+    },
+    "ets": {
+      "mae": 31.08,
+      "rmse": 35.76,
+      "mae_vs_seasonal_naive_pct": 56.4
+    },
+    "random_forest_reduction": {
+      "mae": 47.07,
+      "rmse": 59.84,
+      "mae_vs_seasonal_naive_pct": 33.9
+    }
+  },
+  "best_model_by_mae": "ets"
+}
