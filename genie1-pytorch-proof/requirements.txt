@@ -1,0 +1,7 @@
+scikit-learn==1.9.1
+h5py==3.16.0
+matplotlib==3.11.2
+numpy
+# torch is installed separately from the CPU wheel index:
+# .venv/bin/pip install torch --index-url https://download.pytorch.org/whl/cpu
+# (torch 2.15.0+cpu used for the 11 Nov 2026 run)

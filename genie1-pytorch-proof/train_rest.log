@@ -1,0 +1,90 @@
+/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/train_cnn.py:53: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(j)
+epoch 1/8 train loss 0.6567 val acc 0.6900
+epoch 2/8 train loss 0.4277 val acc 1.0000
+epoch 3/8 train loss 0.1363 val acc 1.0000
+epoch 4/8 train loss 0.0482 val acc 1.0000
+epoch 5/8 train loss 0.0238 val acc 1.0000
+epoch 6/8 train loss 0.0178 val acc 1.0000
+epoch 7/8 train loss 0.0193 val acc 0.9950
+epoch 8/8 train loss 0.0165 val acc 0.9750
+{
+  "n_train": 800,
+  "n_val": 200,
+  "n_test": 200,
+  "seed": 42,
+  "accuracy": 0.955,
+  "precision": 1.0,
+  "recall": 0.9158878504672897,
+  "f1": 0.9560975609756097,
+  "roc_auc": 1.0,
+  "confusion_matrix": [
+    [
+      93,
+      0
+    ],
+    [
+      9,
+      98
+    ]
+  ]
+}
+=== GNN ===
+Traceback (most recent call last):
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/train_gnn.py", line 77, in <module>
+    main()
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/train_gnn.py", line 53, in main
+    loss = loss_fn(model(ftr[j], etr[j], mtr[j]), torch.tensor(ytr[j]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/models.py", line 83, in forward
+    return self.head(self.enc(feat, edges, mask))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/models.py", line 70, in forward
+    h = self._layer(feat, edges, mask, self.lin1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/models.py", line 65, in _layer
+    neigh = h.gather(1, edges.unsqueeze(-1).expand(-1, -1, -1, h.size(-1)))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Index tensor must have the same number of dimensions as input tensor
+=== CONTRASTIVE ===
+Traceback (most recent call last):
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/train_contrastive.py", line 97, in <module>
+    main()
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/train_contrastive.py", line 71, in main
+    loss = nt_xent(model(f1, etr[j], k1), model(f2, etr[j], k2))
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/models.py", line 93, in forward
+    return F.normalize(self.proj(self.enc(feat, edges, mask)), dim=1)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/models.py", line 70, in forward
+    h = self._layer(feat, edges, mask, self.lin1)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/models.py", line 65, in _layer
+    neigh = h.gather(1, edges.unsqueeze(-1).expand(-1, -1, -1, h.size(-1)))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Index tensor must have the same number of dimensions as input tensor

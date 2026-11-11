@@ -1,0 +1,22 @@
+{
+  "n_train": 2800,
+  "n_val": 600,
+  "n_test": 600,
+  "seed": 42,
+  "method": "NT-Xent tau=0.2, node-dropout views p=0.2, frozen encoder + logistic probe",
+  "accuracy": 0.7066666666666667,
+  "precision": 0.6373626373626373,
+  "recall": 0.8405797101449275,
+  "f1": 0.725,
+  "roc_auc": 0.7887927178386116,
+  "confusion_matrix": [
+    [
+      192,
+      132
+    ],
+    [
+      44,
+      232
+    ]
+  ]
+}

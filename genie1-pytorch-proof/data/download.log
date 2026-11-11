@@ -1,0 +1,7 @@
+total 168536
+drwxrws--- 1 root nogroup       48 Nov 11 08:05 .
+drwxrws--- 1 root nogroup       32 Nov 11 08:05 ..
+-rw-rw---- 1 root nogroup        0 Nov 11 08:05 download.log
+-rw-rw---- 1 root nogroup 87919040 Nov 11 08:06 g.hdf5
+-rw-rw---- 1 root nogroup 84658832 Nov 11 08:05 q.hdf5
+DOWNLOAD_OK

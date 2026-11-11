@@ -1,0 +1,28 @@
+{
+  "train": {
+    "mse": 0.009136643260717392,
+    "mse_per_channel": [
+      0.014133495278656483,
+      0.007021281402558088,
+      0.006255152635276318
+    ]
+  },
+  "val": {
+    "mse": 0.009464978240430355,
+    "mse_per_channel": [
+      0.014733037911355495,
+      0.00731253856793046,
+      0.006349360570311546
+    ]
+  },
+  "test": {
+    "mse": 0.008985062129795551,
+    "mse_per_channel": [
+      0.013811917044222355,
+      0.006925572641193867,
+      0.006217694841325283
+    ]
+  },
+  "figure": "outputs/reconstruction.png",
+  "note": "MSE is on log1p+standardised pixels, not raw energy. Synthetic data: see README.md."
+}

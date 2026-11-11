@@ -1,0 +1,112 @@
+/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/train_ae.py:57: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(b)
+epoch 1/6 train MSE 0.3057
+epoch 2/6 train MSE 0.0587
+epoch 3/6 train MSE 0.0264
+epoch 4/6 train MSE 0.0181
+epoch 5/6 train MSE 0.0139
+epoch 6/6 train MSE 0.0116
+train MSE 0.0091 per-channel [0.0141, 0.007, 0.0063]
+val MSE 0.0095 per-channel [0.0147, 0.0073, 0.0063]
+test MSE 0.0090 per-channel [0.0138, 0.0069, 0.0062]
+saved outputs/ae_metrics.json + outputs/reconstruction.png
+=== CNN ===
+/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/train_cnn.py:53: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(j)
+epoch 1/8 train loss 0.6792 val acc 0.6200
+epoch 2/8 train loss 0.5934 val acc 0.7450
+epoch 3/8 train loss 0.4563 val acc 0.7550
+epoch 4/8 train loss 0.4458 val acc 0.8150
+epoch 5/8 train loss 0.3735 val acc 0.8450
+epoch 6/8 train loss 0.3526 val acc 0.8200
+epoch 7/8 train loss 0.3451 val acc 0.7700
+epoch 8/8 train loss 0.3419 val acc 0.8200
+{
+  "n_train": 800,
+  "n_val": 200,
+  "n_test": 200,
+  "seed": 42,
+  "accuracy": 0.845,
+  "precision": 0.9634146341463414,
+  "recall": 0.7383177570093458,
+  "f1": 0.8359788359788359,
+  "roc_auc": 0.9326700834087026,
+  "confusion_matrix": [
+    [
+      90,
+      3
+    ],
+    [
+      28,
+      79
+    ]
+  ]
+}
+=== GNN ===
+/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/train_gnn.py:56: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(j)
+epoch 1/8 train loss 0.6878 val acc 0.6667
+epoch 2/8 train loss 0.6308 val acc 0.7250
+epoch 3/8 train loss 0.5576 val acc 0.7250
+epoch 4/8 train loss 0.5389 val acc 0.7017
+epoch 5/8 train loss 0.5405 val acc 0.7250
+epoch 6/8 train loss 0.5321 val acc 0.7367
+epoch 7/8 train loss 0.5284 val acc 0.7383
+epoch 8/8 train loss 0.5278 val acc 0.7317
+{
+  "n_train": 2800,
+  "n_val": 600,
+  "n_test": 600,
+  "seed": 42,
+  "accuracy": 0.715,
+  "precision": 0.6422764227642277,
+  "recall": 0.8586956521739131,
+  "f1": 0.7348837209302326,
+  "roc_auc": 0.7924047235641438,
+  "confusion_matrix": [
+    [
+      192,
+      132
+    ],
+    [
+      39,
+      237
+    ]
+  ]
+}
+=== CONTRASTIVE ===
+/home/hatch/workspace/gsoc-prep/ml4sci-genie1/work/train_contrastive.py:74: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  tot += float(loss) * len(j)
+epoch 1/6 contrastive loss 4.6708
+epoch 2/6 contrastive loss 4.4254
+epoch 3/6 contrastive loss 4.3297
+epoch 4/6 contrastive loss 4.2511
+epoch 5/6 contrastive loss 4.0282
+epoch 6/6 contrastive loss 3.7876
+probe val acc 0.7400
+{
+  "n_train": 2800,
+  "n_val": 600,
+  "n_test": 600,
+  "seed": 42,
+  "method": "NT-Xent tau=0.2, node-dropout views p=0.2, frozen encoder + logistic probe",
+  "accuracy": 0.7066666666666667,
+  "precision": 0.6373626373626373,
+  "recall": 0.8405797101449275,
+  "f1": 0.725,
+  "roc_auc": 0.7887927178386116,
+  "confusion_matrix": [
+    [
+      192,
+      132
+    ],
+    [
+      44,
+      232
+    ]
+  ]
+}
