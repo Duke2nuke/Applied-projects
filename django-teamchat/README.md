@@ -109,5 +109,4 @@ http://127.0.0.1:8000/api/ (e.g. `GET /api/channels/`,
    as anything more than a local demo.
 3. **Real-time** — WebSockets (Django Channels) if the demo is meant
    to show live messaging like Zulip.
-4. **Push** — the repo was deliberately not pushed to GitHub in this
-   build; pushing is a separate step for Aarambh to approve.
+4. **Push** — the repo is published on GitHub since 11 Nov 2026.
