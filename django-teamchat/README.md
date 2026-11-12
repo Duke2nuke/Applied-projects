@@ -8,7 +8,7 @@ to Zulip or Django.
 
 **Not affiliated with Zulip or Django.** Not a Zulip bot, not a Zulip
 plugin, and no code from either project. Built from scratch on
-11 Nov 2026, locally only — never pushed to GitHub, never submitted
+11 Nov 2026 and published on GitHub the same day; never submitted
 anywhere.
 
 ## What it does
