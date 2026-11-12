@@ -1,0 +1,48 @@
+{
+  "dataset": {
+    "n_samples": 10000,
+    "n_features": 20,
+    "fraud_rate": 0.0335,
+    "train_size": 8000,
+    "test_size": 2000,
+    "test_fraud": 67,
+    "target_recall": 0.8,
+    "synthetic": true
+  },
+  "logistic_regression": {
+    "accuracy": 0.773,
+    "precision@0.5": 0.11834319526627218,
+    "recall@0.5": 0.8955223880597015,
+    "f1@0.5": 0.20905923344947736,
+    "roc_auc": 0.8962404737821498,
+    "pr_auc": 0.2756238672725952,
+    "confusion@0.5": {
+      "tn": 1486,
+      "fp": 447,
+      "fn": 7,
+      "tp": 60
+    },
+    "tuned_threshold": 0.543877903379472,
+    "precision@tuned": 0.12244897959183673,
+    "recall@tuned": 0.8059701492537313,
+    "f1@tuned": 0.2125984251968504
+  },
+  "random_forest": {
+    "accuracy": 0.974,
+    "precision@0.5": 0.9411764705882353,
+    "recall@0.5": 0.23880597014925373,
+    "f1@0.5": 0.38095238095238093,
+    "roc_auc": 0.9604087683671656,
+    "pr_auc": 0.6708189128164853,
+    "confusion@0.5": {
+      "tn": 1932,
+      "fp": 1,
+      "fn": 51,
+      "tp": 16
+    },
+    "tuned_threshold": 0.085,
+    "precision@tuned": 0.4153846153846154,
+    "recall@tuned": 0.8059701492537313,
+    "f1@tuned": 0.5346534653465347
+  }
+}

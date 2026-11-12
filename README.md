@@ -119,6 +119,14 @@ in an interview — not just listed.
   1.0, refusal accuracy 1.0 (small synthetic corpus — pipeline proof).
   7 passing tests. See `day-16-langgraph-rag-agent/`.
 
+- Day 17 — Fraud-Guard: Imbalanced Classification + Threshold Tuning
+  (Day B: AI/ML Python): synthetic transaction fraud detection (~3%
+  fraud), Logistic Regression vs Random Forest with class weights,
+  evaluated on PR-AUC (not accuracy) and re-tuned to recall >= 0.80.
+  Random forest tuned to threshold 0.085: precision 0.415, recall
+  0.806, PR-AUC 0.671; logistic regression PR-AUC 0.276. 6 passing
+  tests. See `day-17-fraud-guard/`.
+
 ## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally
