@@ -1,0 +1,13 @@
+# SYNTHETIC LOG — all secrets below are FAKE, hand-made example values.
+# For demo only. The AWS key is the documented example key; the tokens
+# are invented strings. Nothing here is a real credential.
+2026-11-13 09:02:11 INFO  app starting on port 8080
+2026-11-13 09:02:12 INFO  loaded config from /etc/app/config.yaml
+2026-11-13 09:02:13 DEBUG aws key in use: [REDACTED:AWS_ACCESS_KEY]
+2026-11-13 09:02:14 DEBUG github token: [REDACTED:GITHUB_TOKEN]
+2026-11-13 09:02:15 DEBUG slack alert token: [REDACTED:SLACK_TOKEN]
+2026-11-13 09:02:16 INFO  calling api with Authorization: Bearer [REDACTED:BEARER_TOKEN]
+2026-11-13 09:02:17 ERROR db connect failed: postgres://appuser:[REDACTED:URL_PASSWORD]@db.internal:5432/app
+2026-11-13 09:02:18 DEBUG api_key = "[REDACTED:GENERIC_SECRET]"
+2026-11-13 09:02:19 INFO  request from demo@example.com completed in 42ms
+2026-11-13 09:02:20 INFO  server healthy, no errors

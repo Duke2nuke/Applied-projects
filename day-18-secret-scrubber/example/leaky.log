@@ -1,0 +1,13 @@
+# SYNTHETIC LOG — all secrets below are FAKE, hand-made example values.
+# For demo only. The AWS key is the documented example key; the tokens
+# are invented strings. Nothing here is a real credential.
+2026-11-13 09:02:11 INFO  app starting on port 8080
+2026-11-13 09:02:12 INFO  loaded config from /etc/app/config.yaml
+2026-11-13 09:02:13 DEBUG aws key in use: AKIAIOSFODNN7EXAMPLE
+2026-11-13 09:02:14 DEBUG github token: ghp_Ab1Cd2Ef3Gh4Ij5Kl6Mn7Op8Qr9St0Uv1Wx2
+2026-11-13 09:02:15 DEBUG slack alert token: xoxb-123456789012-FAKE-abcdef
+2026-11-13 09:02:16 INFO  calling api with Authorization: Bearer abcdefghij1234567890XYZ
+2026-11-13 09:02:17 ERROR db connect failed: postgres://appuser:s3cretPass9@db.internal:5432/app
+2026-11-13 09:02:18 DEBUG api_key = "sk-fake-key-for-testing-123456"
+2026-11-13 09:02:19 INFO  request from demo@example.com completed in 42ms
+2026-11-13 09:02:20 INFO  server healthy, no errors

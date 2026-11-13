@@ -1,0 +1,2 @@
+# Standard library only — no third-party dependencies.
+# Python 3.8+ (uses only stdlib: argparse, json, re, sys, dataclasses).

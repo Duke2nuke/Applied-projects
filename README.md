@@ -127,6 +127,17 @@ in an interview — not just listed.
   0.806, PR-AUC 0.671; logistic regression PR-AUC 0.276. 6 passing
   tests. See `day-17-fraud-guard/`.
 
+- Day 18 — Secret Scrubber (Day C: community / open-source):
+  stdlib-only CLI that redacts secrets from text/log files before
+  sharing — AWS keys, GitHub/Slack tokens, JWTs, private-key blocks,
+  bearer tokens, URL passwords, generic `key = value` assignments,
+  with opt-in email/card redaction, a JSON report (counts only, no
+  secret values), `--check` mode for CI, `--in-place` with backup,
+  custom patterns via config, and idempotent scrubbing. MIT-licensed,
+  with a synthetic example log and 19 passing tests. On the 13-line
+  example log: 6 redactions across 6 lines. See
+  `day-18-secret-scrubber/`.
+
 ## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally
