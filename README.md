@@ -138,6 +138,15 @@ in an interview — not just listed.
   example log: 6 redactions across 6 lines. See
   `day-18-secret-scrubber/`.
 
+- Day 19 — PyTorch Iris Classifier, Served by FastAPI, with CI
+  (Day A: trending-skill): PyTorch MLP (4 -> 16 -> 16 -> 3) on the
+  Fisher Iris dataset, served by a FastAPI app (`/health`,
+  `/predict`, `/metrics`), with a GitHub Actions workflow that
+  installs CPU-only PyTorch, trains, and runs the tests on every
+  push — the repo's first CI. Test accuracy 0.9167 (22/24; setosa
+  1.0, versicolor 1.0, virginica 0.75), 10/10 tests pass. See
+  `day-19-pytorch-iris-service/`.
+
 ## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally

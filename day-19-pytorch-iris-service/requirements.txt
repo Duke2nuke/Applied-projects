@@ -1,0 +1,9 @@
+# CPU-only PyTorch (no CUDA wheel, ~190 MB instead of ~800 MB).
+# The +cpu local version exists only on the PyTorch wheel index, so pip
+# must check that index too; PyPI still supplies fastapi/httpx/uvicorn.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.15.0+cpu
+fastapi==0.162.7
+httpx
+uvicorn
+pytest

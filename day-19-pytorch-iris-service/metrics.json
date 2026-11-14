@@ -1,0 +1,20 @@
+{
+  "epochs": 200,
+  "learning_rate": 0.01,
+  "seed": 42,
+  "hidden_units": 16,
+  "split": {
+    "train": 102,
+    "val": 24,
+    "test": 24
+  },
+  "train_accuracy": 1.0,
+  "val_accuracy": 1.0,
+  "test_accuracy": 0.9167,
+  "test_accuracy_per_class": {
+    "setosa": 1.0,
+    "versicolor": 1.0,
+    "virginica": 0.75
+  },
+  "final_train_loss": 0.0095
+}
