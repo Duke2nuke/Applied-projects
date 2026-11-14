@@ -1,0 +1,29 @@
+name: day-19 iris service CI
+
+# Runs only when this project (or this workflow) changes, so the rest of
+# the repo is untouched. Installs CPU-only PyTorch, trains the model,
+# then runs the full test suite including the FastAPI smoke tests.
+on:
+  push:
+    paths:
+      - "day-19-pytorch-iris-service/**"
+      - ".github/workflows/day-19-ci.yml"
+  pull_request:
+    paths:
+      - "day-19-pytorch-iris-service/**"
+      - ".github/workflows/day-19-ci.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r day-19-pytorch-iris-service/requirements.txt
+      - name: Train model
+        run: python day-19-pytorch-iris-service/train.py
+      - name: Run tests
+        run: python -m pytest day-19-pytorch-iris-service/ -v

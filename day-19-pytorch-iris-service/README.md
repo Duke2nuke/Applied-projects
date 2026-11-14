@@ -19,7 +19,8 @@ because that is what the job data now asks for.
   AWS and PyTorch. RemoteAI's gap table makes the point sharper:
   CI/CD appears in 15% of remote AI ads but on only 6% of talent
   profiles. This repo had no CI at all before this project — the
-  workflow in `.github/workflows/day-19-ci.yml` is its first.
+  workflow file (`ci-workflow.yml`, to be placed at
+  `.github/workflows/day-19-ci.yml`) is its first.
 - **Deployment is the other half of the gap.** The same datasets put
   FastAPI / model serving next to training in the production phase,
   so the model is served over HTTP, not just evaluated in a script.
@@ -37,6 +38,11 @@ because that is what the job data now asks for.
   `GET /metrics` (the eval report).
 - `.github/workflows/day-19-ci.yml` installs CPU-only PyTorch,
   trains, and runs the tests on every push/PR touching this folder.
+  The workflow file is included here as `ci-workflow.yml` — copy it
+  to `.github/workflows/day-19-ci.yml` in the repo (via the GitHub
+  web UI) to activate it. GitHub does not let the app that pushes
+  these daily projects write workflow files directly, so that one
+  step is manual.
 
 ## Results (actually run, 14 Nov 2026)
 
