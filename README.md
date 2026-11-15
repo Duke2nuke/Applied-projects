@@ -148,6 +148,14 @@ in an interview — not just listed.
   setosa 1.0, versicolor 1.0, virginica 0.75), 10/10 tests pass. See
   `day-19-pytorch-iris-service/`.
 
+- Day 20 — Customer Churn Predictor (Day B: AI/ML Python):
+  Logistic Regression vs Random Forest on 3,000 synthetic telecom
+  customers (32.2% churn), compared on ROC-AUC / PR-AUC with top
+  churn drivers and a ranked top-10 retention outreach list.
+  Logistic regression ROC-AUC 0.808, recall 0.663; random forest
+  ROC-AUC 0.772, precision 0.659. 8/8 tests pass. See
+  `day-20-churn-predictor/`.
+
 ## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally
