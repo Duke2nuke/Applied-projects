@@ -156,6 +156,15 @@ in an interview — not just listed.
   ROC-AUC 0.772, precision 0.659. 8/8 tests pass. See
   `day-20-churn-predictor/`.
 
+- Day 21 — Env Doctor (Day C: community / open-source):
+  stdlib-only CLI that audits a `.env` file against its
+  `.env.example` — missing, extra, empty, duplicated and malformed
+  keys — with a CI-friendly exit code and JSON output, plus `init`
+  (generate a redacted example) and `fix` (append missing keys).
+  On the 7-line example pair it finds the missing `REDIS_URL`, the
+  duplicated `DEBUG`, and a malformed line. MIT-licensed, with
+  example files and 11 passing tests. See `day-21-env-doctor/`.
+
 ## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally
