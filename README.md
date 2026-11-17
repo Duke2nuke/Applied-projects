@@ -165,6 +165,15 @@ in an interview — not just listed.
   duplicated `DEBUG`, and a malformed line. MIT-licensed, with
   example files and 11 passing tests. See `day-21-env-doctor/`.
 
+- Day 22 — MCP Iris Classifier Server (Day A: trending-skill):
+  stdlib-only MCP server over stdio JSON-RPC exposing a trained Iris
+  classifier as tools an agent can call — `predict_iris`,
+  `predict_batch`, `model_info` — with a pure-Python softmax logistic
+  regression trained at startup from the shipped Iris CSV (train
+  0.958, test 1.000 on 30 held-out rows) and an eval client that
+  grades the server on a 10-case golden set: 10/10 passed, mean
+  latency 0.07 ms. 9/9 tests pass. See `day-22-mcp-iris-server/`.
+
 ## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally

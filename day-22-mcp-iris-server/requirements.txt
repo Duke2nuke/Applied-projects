@@ -1,0 +1,2 @@
+# No third-party dependencies — Python standard library only.
+# Python 3.8+ is enough. Nothing to install.
