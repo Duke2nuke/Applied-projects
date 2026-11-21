@@ -174,6 +174,15 @@ in an interview — not just listed.
   grades the server on a 10-case golden set: 10/10 passed, mean
   latency 0.07 ms. 9/9 tests pass. See `day-22-mcp-iris-server/`.
 
+- Day 26 — Q-Learning Gridworld Agent (Day B: AI/ML Python):
+  tabular Q-learning (numpy only) on a 6x6 gridworld with walls, a
+  pit (-10) and a goal (+10, step cost -0.1). Epsilon-greedy, epsilon
+  decays 1.0 -> 0.05, Bellman update, alpha 0.1, gamma 0.95. Trained
+  2,000 episodes (seed 42): the greedy policy reaches the goal in
+  100/100 eval episodes in 10.0 mean steps — exactly the optimal 10
+  — mean reward up from -5.55 (first 100 episodes) to 9.06 (last
+  100). 10/10 tests pass. See `day-26-qlearning-gridworld/`.
+
 ## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally

@@ -1,0 +1,11 @@
+{
+  "episodes": 2000,
+  "seed": 42,
+  "eval_episodes": 100,
+  "success_rate": 1.0,
+  "mean_steps_to_goal": 10.0,
+  "mean_eval_reward": 9.1,
+  "mean_reward_first_100_episodes": -5.545000000000001,
+  "mean_reward_last_100_episodes": 9.056000000000001,
+  "optimal_steps": 10
+}
