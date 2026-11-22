@@ -183,6 +183,19 @@ in an interview — not just listed.
   — mean reward up from -5.55 (first 100 episodes) to 9.06 (last
   100). 10/10 tests pass. See `day-26-qlearning-gridworld/`.
 
+- Day 27 — py-unused: Unused-Import Finder (Day C: community /
+  open-source): stdlib-only CLI that finds unused imports in Python
+  code with AST analysis — plain/aliased/from imports, attribute
+  roots, string annotations and `__all__` counted as uses; star
+  imports, `__future__`, `if TYPE_CHECKING:` blocks and `__init__.py`
+  re-exports skipped rather than falsely flagged — with JSON output,
+  CI-friendly exit codes and a `--fix` mode that removes unused
+  names from single-line import statements. On the bundled example
+  it finds exactly the 3 genuinely unused imports (`sys`,
+  `OrderedDict`, `requests`) and `--fix` removes them while the file
+  still runs. MIT-licensed, with example files and 27 passing tests.
+  See `day-27-py-unused/`.
+
 ## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally
