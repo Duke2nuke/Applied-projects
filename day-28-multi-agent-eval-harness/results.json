@@ -1,0 +1,299 @@
+{
+  "agents": {
+    "direct": {
+      "mean_correctness": 0.625,
+      "mean_grounded": 0.75,
+      "mean_concise": 1.0,
+      "mean_latency_ms": 0.2,
+      "total_tokens_est": 351,
+      "by_category": {
+        "distractor": 0.25,
+        "simple": 1.0,
+        "two-part": 0.625
+      },
+      "per_task": [
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q01",
+          "category": "simple"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q02",
+          "category": "simple"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q03",
+          "category": "simple"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q04",
+          "category": "simple"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q05",
+          "category": "two-part"
+        },
+        {
+          "correctness": 0.5,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q06",
+          "category": "two-part"
+        },
+        {
+          "correctness": 0.5,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q07",
+          "category": "two-part"
+        },
+        {
+          "correctness": 0.5,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q08",
+          "category": "two-part"
+        },
+        {
+          "correctness": 0.0,
+          "grounded": 0.0,
+          "concise": 1.0,
+          "task_id": "q09",
+          "category": "distractor"
+        },
+        {
+          "correctness": 0.0,
+          "grounded": 0.0,
+          "concise": 1.0,
+          "task_id": "q10",
+          "category": "distractor"
+        },
+        {
+          "correctness": 0.0,
+          "grounded": 0.0,
+          "concise": 1.0,
+          "task_id": "q11",
+          "category": "distractor"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q12",
+          "category": "distractor"
+        }
+      ]
+    },
+    "planner": {
+      "mean_correctness": 1.0,
+      "mean_grounded": 1.0,
+      "mean_concise": 1.0,
+      "mean_latency_ms": 0.43,
+      "total_tokens_est": 383,
+      "by_category": {
+        "distractor": 1.0,
+        "simple": 1.0,
+        "two-part": 1.0
+      },
+      "per_task": [
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q01",
+          "category": "simple"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q02",
+          "category": "simple"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q03",
+          "category": "simple"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q04",
+          "category": "simple"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q05",
+          "category": "two-part"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q06",
+          "category": "two-part"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q07",
+          "category": "two-part"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q08",
+          "category": "two-part"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q09",
+          "category": "distractor"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q10",
+          "category": "distractor"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q11",
+          "category": "distractor"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q12",
+          "category": "distractor"
+        }
+      ]
+    },
+    "debate": {
+      "mean_correctness": 1.0,
+      "mean_grounded": 1.0,
+      "mean_concise": 1.0,
+      "mean_latency_ms": 0.58,
+      "total_tokens_est": 734,
+      "by_category": {
+        "distractor": 1.0,
+        "simple": 1.0,
+        "two-part": 1.0
+      },
+      "per_task": [
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q01",
+          "category": "simple"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q02",
+          "category": "simple"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q03",
+          "category": "simple"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q04",
+          "category": "simple"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q05",
+          "category": "two-part"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q06",
+          "category": "two-part"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q07",
+          "category": "two-part"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q08",
+          "category": "two-part"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q09",
+          "category": "distractor"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q10",
+          "category": "distractor"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q11",
+          "category": "distractor"
+        },
+        {
+          "correctness": 1.0,
+          "grounded": 1.0,
+          "concise": 1.0,
+          "task_id": "q12",
+          "category": "distractor"
+        }
+      ]
+    }
+  },
+  "n_cases": 12
+}

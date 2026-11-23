@@ -174,6 +174,40 @@ in an interview — not just listed.
   grades the server on a 10-case golden set: 10/10 passed, mean
   latency 0.07 ms. 9/9 tests pass. See `day-22-mcp-iris-server/`.
 
+- Day 23 — Sentiment Analyzer (Day B: AI/ML Python): binary
+  positive/negative classification of short review sentences —
+  TF-IDF (unigrams + bigrams) with Logistic Regression vs Multinomial
+  Naive Bayes, trained on the UCI Sentiment Labelled Sentences set
+  (3,000 real sentences: Amazon, IMDb, Yelp). LogReg wins at 0.835
+  accuracy / 0.8349 macro F1 on 600 held-out sentences (NB 0.8017),
+  with per-source accuracy reported (Amazon 0.864, IMDb 0.792,
+  Yelp 0.848). CLI predicts one sentence; 14/14 tests pass.
+  See `day-23-sentiment-analyzer/`.
+
+- Day 24 — JSON Schema Infer (Day C: community / open-source):
+  stdlib-only CLI that infers a JSON Schema (draft 2020-12) from
+  sample JSON — types (int vs number collapsed correctly, bool never
+  mistaken for int), required as the intersection of keys, merged
+  array-item schemas, mixed-type `anyOf`, format heuristics
+  (date-time/email/uri only when every sample agrees) and enum
+  heuristics for small closed value sets — plus a `validate`
+  subcommand that gates new data in CI. On two synthetic example
+  records it marks `tags` and `address.landmark` optional, `score` a
+  number, and `created_at`/`email` as date-time/email strings; a bad
+  record fails with 6 path-labelled errors. MIT-licensed, with
+  example files and 23 passing tests. See
+  `day-24-json-schema-infer/`.
+- Day 25 — Effective-Context Checker (Day A: trending-skill):
+  stdlib-only CLI that checks a prompt against a model's advertised
+  AND effective context (OK / WARNING / OVER verdicts, cost estimate),
+  plus a needle-retrieval eval proving the point: top-1 hit rate falls
+  1.0 -> 0.4 -> 0.0 as context grows 500 -> 1,000 -> 2,000 tokens, and
+  top-3 is 0.0 by 4,000. Trend: "effective context, not context
+  window" (Threads @dearsum1, 18 Nov; 19 Nov trending summary).
+  Effective figures are labelled conservative working estimates, not
+  vendor claims. 15 passing tests. See
+  `day-25-effective-context-checker/`.
+
 - Day 26 — Q-Learning Gridworld Agent (Day B: AI/ML Python):
   tabular Q-learning (numpy only) on a 6x6 gridworld with walls, a
   pit (-10) and a goal (+10, step cost -0.1). Epsilon-greedy, epsilon
@@ -195,6 +229,18 @@ in an interview — not just listed.
   `OrderedDict`, `requests`) and `--fix` removes them while the file
   still runs. MIT-licensed, with example files and 27 passing tests.
   See `day-27-py-unused/`.
+
+- Day 28 — Multi-Agent Eval Harness with Tracing (Day A:
+  trending-skill): stdlib-only harness that runs three agent
+  strategies (direct retrieval, plan-then-answer, propose-then-critique)
+  over a 12-case golden set (simple, two-part, lexical-distractor
+  questions), grades them deterministically on correctness, groundedness
+  and conciseness, and writes OpenTelemetry-style trace spans plus a
+  CI regression gate. On the synthetic set the planner scores 1.000
+  correctness vs 0.625 for naive direct retrieval, for +9% estimated
+  tokens; the debate agent also scores 1.000 but at 1.9x the planner's
+  tokens — more agents is not automatically better. 17 passing tests.
+  See `day-28-multi-agent-eval-harness/`.
 
 ## Skill projects (10 Nov 2026)
 
