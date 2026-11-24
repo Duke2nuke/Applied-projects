@@ -1,0 +1,72 @@
+{
+  "features": [
+    {
+      "feature": "income",
+      "psi": 0.7715,
+      "ks_statistic": 0.3743,
+      "ks_pvalue": 0.0,
+      "ref_mean": 54.619,
+      "cur_mean": 41.185,
+      "severity": "DRIFT"
+    },
+    {
+      "feature": "age",
+      "psi": 0.0073,
+      "ks_statistic": 0.0273,
+      "ks_pvalue": 0.441265,
+      "ref_mean": 38.245,
+      "cur_mean": 38.068,
+      "severity": "STABLE"
+    },
+    {
+      "feature": "credit_score",
+      "psi": 0.3211,
+      "ks_statistic": 0.1493,
+      "ks_pvalue": 0.0,
+      "ref_mean": 679.74,
+      "cur_mean": 677.889,
+      "severity": "DRIFT"
+    },
+    {
+      "feature": "loan_amount",
+      "psi": 1.2337,
+      "ks_statistic": 0.4597,
+      "ks_pvalue": 0.0,
+      "ref_mean": 17.835,
+      "cur_mean": 26.001,
+      "severity": "DRIFT"
+    },
+    {
+      "feature": "years_employed",
+      "psi": 0.0128,
+      "ks_statistic": 0.0337,
+      "ks_pvalue": 0.205524,
+      "ref_mean": 6.05,
+      "cur_mean": 5.847,
+      "severity": "STABLE"
+    }
+  ],
+  "overall_verdict": "DRIFT",
+  "drift_drivers": [
+    "income",
+    "credit_score",
+    "loan_amount"
+  ],
+  "n_reference": 3000,
+  "n_current": 1500,
+  "prediction": {
+    "psi": 0.4916,
+    "ks_statistic": 0.318,
+    "ks_pvalue": 0.0,
+    "ref_mean_proba": 0.1463,
+    "cur_mean_proba": 0.2977,
+    "severity": "DRIFT"
+  },
+  "model": {
+    "type": "logistic regression (from scratch, numpy gradient descent)",
+    "train_accuracy": 0.8633,
+    "current_accuracy": 0.762,
+    "reference_default_rate": 0.1427,
+    "current_default_rate": 0.3167
+  }
+}

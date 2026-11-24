@@ -242,6 +242,18 @@ in an interview — not just listed.
   tokens — more agents is not automatically better. 17 passing tests.
   See `day-28-multi-agent-eval-harness/`.
 
+- Day 29 — Drift Watch: Data & Prediction Drift Detector (Day B:
+  AI/ML Python): PSI + Kolmogorov–Smirnov drift check per feature and
+  for the model's own predictions, with STABLE / WATCH / DRIFT verdicts
+  and a CI-friendly exit code. Demo trains a logistic-regression
+  loan-default model from scratch (numpy) on 3,000 synthetic rows, then
+  scores a drifted 1,500-row batch: flags exactly the three planted
+  shifts (income PSI 0.77, credit_score 0.32, loan_amount 1.23) and the
+  prediction distribution (PSI 0.49, mean default probability 0.146 ->
+  0.298), while the age control stays STABLE (PSI 0.007); accuracy on
+  the drifted batch falls 0.863 -> 0.762. 16 passing tests.
+  See `day-29-drift-watch/`.
+
 ## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally
