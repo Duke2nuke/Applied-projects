@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "address": {
+      "properties": {
+        "city": {
+          "type": "string"
+        },
+        "landmark": {
+          "type": "string"
+        },
+        "pin": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "city",
+        "pin"
+      ],
+      "type": "object"
+    },
+    "created_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "email": {
+      "format": "email",
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "score": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string"
+    },
+    "tags": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "address",
+    "created_at",
+    "email",
+    "id",
+    "name",
+    "score",
+    "status"
+  ],
+  "type": "object"
+}

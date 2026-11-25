@@ -1,0 +1,32 @@
+[
+  {
+    "target_tokens": 500,
+    "trials": 5,
+    "hit_at_1": 1.0,
+    "hit_at_3": 1.0
+  },
+  {
+    "target_tokens": 1000,
+    "trials": 5,
+    "hit_at_1": 0.4,
+    "hit_at_3": 1.0
+  },
+  {
+    "target_tokens": 2000,
+    "trials": 5,
+    "hit_at_1": 0.0,
+    "hit_at_3": 0.8
+  },
+  {
+    "target_tokens": 4000,
+    "trials": 5,
+    "hit_at_1": 0.0,
+    "hit_at_3": 0.0
+  },
+  {
+    "target_tokens": 8000,
+    "trials": 5,
+    "hit_at_1": 0.0,
+    "hit_at_3": 0.0
+  }
+]

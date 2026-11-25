@@ -1,0 +1,4 @@
+# No dependencies: Python 3.10+ standard library only.
+# Run:  python3 context_check.py check --model gpt-4o-mini --file examples/sample-prompt.txt
+#        python3 context_check.py eval
+# Test:  python3 -m unittest test_context_check -v

@@ -253,6 +253,14 @@ in an interview — not just listed.
   0.298), while the age control stays STABLE (PSI 0.007); accuracy on
   the drifted batch falls 0.863 -> 0.762. 16 passing tests.
   See `day-29-drift-watch/`.
+- Day 30 — changelog-gen: CHANGELOG.md Generator from Git History
+  (Day C: community / open-source): stdlib-only CLI that groups a
+  repo's commits by release (git tags; newer commits are
+  Unreleased) and sorts them into sections from Conventional
+  Commits subjects, with breaking-change detection, scopes,
+  `--since` filtering and `--output`. MIT-licensed, with a
+  generated example changelog and 13 passing tests.
+  See `day-30-changelog-gen/`.
 
 ## Skill projects (10 Nov 2026)
 

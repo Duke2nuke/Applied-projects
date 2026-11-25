@@ -1,0 +1,48 @@
+{
+  "n_train": 2400,
+  "n_test": 600,
+  "test_size": 0.2,
+  "seed": 42,
+  "models": {
+    "logreg": {
+      "accuracy": 0.835,
+      "macro_f1": 0.8349,
+      "confusion_matrix": [
+        [
+          245,
+          55
+        ],
+        [
+          44,
+          256
+        ]
+      ],
+      "per_source_accuracy": {
+        "amazon": 0.8641,
+        "imdb": 0.7917,
+        "yelp": 0.8482
+      },
+      "classification_report": "              precision    recall  f1-score   support\n\n    negative     0.8478    0.8167    0.8319       300\n    positive     0.8232    0.8533    0.8380       300\n\n    accuracy                         0.8350       600\n   macro avg     0.8355    0.8350    0.8349       600\nweighted avg     0.8355    0.8350    0.8349       600\n"
+    },
+    "nb": {
+      "accuracy": 0.8017,
+      "macro_f1": 0.8017,
+      "confusion_matrix": [
+        [
+          241,
+          59
+        ],
+        [
+          60,
+          240
+        ]
+      ],
+      "per_source_accuracy": {
+        "amazon": 0.8043,
+        "imdb": 0.8021,
+        "yelp": 0.7991
+      },
+      "classification_report": "              precision    recall  f1-score   support\n\n    negative     0.8007    0.8033    0.8020       300\n    positive     0.8027    0.8000    0.8013       300\n\n    accuracy                         0.8017       600\n   macro avg     0.8017    0.8017    0.8017       600\nweighted avg     0.8017    0.8017    0.8017       600\n"
+    }
+  }
+}
