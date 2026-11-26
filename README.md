@@ -262,6 +262,18 @@ in an interview — not just listed.
   generated example changelog and 13 passing tests.
   See `day-30-changelog-gen/`.
 
+- Day 31 — Guardrail-Lab: LLM Guardrails + Red-Teaming Harness
+  (Day A: trending-skill): stdlib-only harness that attacks a
+  deliberately vulnerable support chatbot with 24 OWASP LLM Top 10
+  (2025) prompts, then re-runs them behind a three-layer guardrail
+  pipeline (input filtering, tool authorisation, output checking),
+  judging each attack mechanically and gating on attack-success
+  rate and false-positive rate. Unguarded, 24/24 attacks succeed;
+  guarded, 2/24 succeed with 0/10 false positives — both survivors
+  are well-formed refunds for real orders, which need ownership
+  checks, not more patterns. 21 passing tests.
+  See `day-31-guardrail-lab/`.
+
 ## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally
