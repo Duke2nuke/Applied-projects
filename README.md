@@ -274,6 +274,16 @@ in an interview — not just listed.
   checks, not more patterns. 21 passing tests.
   See `day-31-guardrail-lab/`.
 
+- Day 32 — Decision Tree from Scratch (CART) (Day B: AI/ML Python):
+  pure-Python CART classifier (Gini impurity, best-split search,
+  feature importances) trained on sklearn's bundled Wisconsin
+  Breast Cancer dataset (569 samples, 30 features). Depth-3 tree
+  scores 0.9386 on 114 held-out samples — exactly matching
+  sklearn's depth-3 tree, same confusion matrix — while the
+  unlimited-depth tree drops to 0.9123 (overfitting, depth 7) and
+  a 200-tree random forest reaches 0.9561. 11 passing tests.
+  See `day-32-decision-tree-from-scratch/`.
+
 ## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally

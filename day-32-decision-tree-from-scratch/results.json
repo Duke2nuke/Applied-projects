@@ -1,0 +1,87 @@
+{
+  "dataset": "sklearn Wisconsin Breast Cancer (bundled)",
+  "n_train": 455,
+  "n_test": 114,
+  "models": [
+    {
+      "model": "from-scratch CART (max_depth=3)",
+      "accuracy": 0.9386,
+      "confusion_matrix": [
+        [
+          38,
+          4
+        ],
+        [
+          3,
+          69
+        ]
+      ],
+      "tree_depth": 3
+    },
+    {
+      "model": "from-scratch CART (max_depth=None)",
+      "accuracy": 0.9123,
+      "confusion_matrix": [
+        [
+          39,
+          3
+        ],
+        [
+          7,
+          65
+        ]
+      ],
+      "tree_depth": 7
+    },
+    {
+      "model": "sklearn DecisionTree (max_depth=3)",
+      "accuracy": 0.9386,
+      "confusion_matrix": [
+        [
+          38,
+          4
+        ],
+        [
+          3,
+          69
+        ]
+      ]
+    },
+    {
+      "model": "sklearn RandomForest (200 trees)",
+      "accuracy": 0.9561,
+      "confusion_matrix": [
+        [
+          39,
+          3
+        ],
+        [
+          2,
+          70
+        ]
+      ]
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "worst radius",
+      "importance": 0.7638
+    },
+    {
+      "feature": "worst concave points",
+      "importance": 0.1271
+    },
+    {
+      "feature": "texture error",
+      "importance": 0.0477
+    },
+    {
+      "feature": "worst texture",
+      "importance": 0.0337
+    },
+    {
+      "feature": "worst concavity",
+      "importance": 0.0179
+    }
+  ]
+}
