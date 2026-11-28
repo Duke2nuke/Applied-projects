@@ -1,0 +1,205 @@
+{
+  "file": "example.csv",
+  "rows": 12,
+  "columns": 8,
+  "duplicate_rows": 1,
+  "ragged_rows": 0,
+  "total_missing_cells": 14,
+  "verdict": "FAIL",
+  "error_count": 4,
+  "warning_count": 4,
+  "issues": [
+    {
+      "severity": "error",
+      "column": null,
+      "code": "duplicate_rows",
+      "message": "1 duplicate row(s) (1/12 rows are extra copies)"
+    },
+    {
+      "severity": "error",
+      "column": "age",
+      "code": "mixed_types",
+      "message": "mixed value types: int x11, string x1"
+    },
+    {
+      "severity": "warn",
+      "column": "email",
+      "code": "invalid_email",
+      "message": "1 value(s) are not valid emails, e.g. 'kabir[at]example.com'"
+    },
+    {
+      "severity": "error",
+      "column": "signup_date",
+      "code": "mixed_types",
+      "message": "mixed value types: date x11, string x1"
+    },
+    {
+      "severity": "warn",
+      "column": "signup_date",
+      "code": "bad_date",
+      "message": "1 value(s) do not parse as dates, e.g. 'not-a-date'"
+    },
+    {
+      "severity": "warn",
+      "column": "country",
+      "code": "constant_column",
+      "message": "constant value 'India' in every row \u2014 carries no information"
+    },
+    {
+      "severity": "warn",
+      "column": "currency",
+      "code": "constant_column",
+      "message": "constant value 'INR' in every row \u2014 carries no information"
+    },
+    {
+      "severity": "error",
+      "column": "notes",
+      "code": "empty_column",
+      "message": "column is completely empty"
+    }
+  ],
+  "column_profiles": [
+    {
+      "name": "customer_id",
+      "rows": 12,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 11,
+      "type": "int",
+      "constant": false,
+      "empty": false,
+      "min": 1.0,
+      "max": 12.0,
+      "mean": 6.1667,
+      "median": 5.5,
+      "stdev": 3.4841,
+      "outliers": 0
+    },
+    {
+      "name": "name",
+      "rows": 12,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 11,
+      "type": "string",
+      "constant": false,
+      "empty": false,
+      "top_values": [
+        {
+          "value": "Anaya",
+          "count": 2
+        },
+        {
+          "value": "Aarav",
+          "count": 1
+        },
+        {
+          "value": "Meera",
+          "count": 1
+        },
+        {
+          "value": "Kabir",
+          "count": 1
+        },
+        {
+          "value": "Rohan",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "age",
+      "rows": 12,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 11,
+      "type": "mixed",
+      "constant": false,
+      "empty": false
+    },
+    {
+      "name": "email",
+      "rows": 12,
+      "missing": 2,
+      "missing_pct": 16.7,
+      "unique": 10,
+      "type": "string",
+      "constant": false,
+      "empty": false,
+      "top_values": [
+        {
+          "value": "aarav@example.com",
+          "count": 1
+        },
+        {
+          "value": "meera@example.com",
+          "count": 1
+        },
+        {
+          "value": "kabir[at]example.com",
+          "count": 1
+        },
+        {
+          "value": "rohan@example.com",
+          "count": 1
+        },
+        {
+          "value": "ishita@example.com",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "signup_date",
+      "rows": 12,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 11,
+      "type": "mixed",
+      "constant": false,
+      "empty": false
+    },
+    {
+      "name": "country",
+      "rows": 12,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 1,
+      "type": "string",
+      "constant": true,
+      "empty": false,
+      "top_values": [
+        {
+          "value": "India",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "name": "currency",
+      "rows": 12,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 1,
+      "type": "string",
+      "constant": true,
+      "empty": false,
+      "top_values": [
+        {
+          "value": "INR",
+          "count": 12
+        }
+      ]
+    },
+    {
+      "name": "notes",
+      "rows": 12,
+      "missing": 12,
+      "missing_pct": 100.0,
+      "unique": 0,
+      "type": "unknown",
+      "constant": false,
+      "empty": true
+    }
+  ]
+}

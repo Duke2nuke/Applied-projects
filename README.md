@@ -284,6 +284,18 @@ in an interview — not just listed.
   a 200-tree random forest reaches 0.9561. 11 passing tests.
   See `day-32-decision-tree-from-scratch/`.
 
+- Day 33 — dqcheck: CSV Data-Quality Checker (Day C: community /
+  open-source): stdlib-only CLI that profiles a CSV column by column
+  and flags missing values, constant or fully-empty columns,
+  duplicate rows, mixed types, IQR outliers, invalid emails and
+  unparseable dates, with text or JSON output and CI-friendly exit
+  codes. On the 12-row synthetic example it returns FAIL with 4
+  errors and 4 warnings, naming every planted problem (duplicated
+  row, `"unknown"` age, `kabir[at]example.com`, `not-a-date`, two
+  constant columns, empty `notes` column). MIT-licensed, with
+  example files and 14 passing tests. See
+  `day-33-csv-quality-check/`.
+
 ## Skill projects (10 Nov 2026)
 
 Built as checkable proof for internship skills — each one was run locally

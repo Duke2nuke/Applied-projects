@@ -1,0 +1,13 @@
+customer_id,name,age,email,signup_date,country,currency,notes
+1,Aarav,24,aarav@example.com,2026-01-05,India,INR,
+2,Meera,31,meera@example.com,2026-01-06,India,INR,
+3,Kabir,29,kabir[at]example.com,2026-01-07,India,INR,
+4,Anaya,27,,2026-01-08,India,INR,
+5,Rohan,250,rohan@example.com,2026-01-09,India,INR,
+6,Ishita,33,ishita@example.com,not-a-date,India,INR,
+7,Arjun,26,arjun@example.com,2026-01-11,India,INR,
+4,Anaya,27,,2026-01-08,India,INR,
+9,Vikram,unknown,vikram@example.com,2026-01-13,India,INR,
+10,Sana,30,sana@example.com,2026-01-14,India,INR,
+11,Dev,28,dev@example.com,2026-01-15,India,INR,
+12,Nia,22,nia@example.com,2026-01-16,India,INR,

@@ -1,0 +1,1 @@
+# dqcheck — no third-party dependencies (Python 3.9+ standard library only)

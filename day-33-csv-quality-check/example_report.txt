@@ -1,0 +1,23 @@
+dqcheck 1.0.0 — example.csv
+Rows: 12  Columns: 8  Missing cells: 14  Duplicate rows: 1
+Verdict: FAIL (4 error(s), 4 warning(s))
+
+Columns:
+  customer_id      int     missing   0.0%  unique 11  range 1–12  mean 6.1667  outliers 0
+  name             string  missing   0.0%  unique 11  top: Anaya (2), Aarav (1), Meera (1)
+  age              mixed   missing   0.0%  unique 11
+  email            string  missing  16.7%  unique 10  top: aarav@example.com (1), meera@example.com (1), kabir[at]example.com (1)
+  signup_date      mixed   missing   0.0%  unique 11
+  country          string  missing   0.0%  unique 1  top: India (12)
+  currency         string  missing   0.0%  unique 1  top: INR (12)
+  notes            unknown missing 100.0%  unique 0
+
+Issues:
+  ERROR duplicate_rows: 1 duplicate row(s) (1/12 rows are extra copies)
+  ERROR [age] mixed_types: mixed value types: int x11, string x1
+  WARN  [email] invalid_email: 1 value(s) are not valid emails, e.g. 'kabir[at]example.com'
+  ERROR [signup_date] mixed_types: mixed value types: date x11, string x1
+  WARN  [signup_date] bad_date: 1 value(s) do not parse as dates, e.g. 'not-a-date'
+  WARN  [country] constant_column: constant value 'India' in every row — carries no information
+  WARN  [currency] constant_column: constant value 'INR' in every row — carries no information
+  ERROR [notes] empty_column: column is completely empty
